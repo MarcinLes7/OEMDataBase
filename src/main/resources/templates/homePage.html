@@ -8,14 +8,7 @@
     <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
-   <nav id="page-nav">
-       <div class="container" id="nav-row">
-           <a id="logo" th:href="@{/}">Baza OEM</a>
-           <a class="nav-item" href="">Czynniki środowiska pracy</a>
-           <a class="nav-item" href="">Interpretacja wyników</a>
-           <a class="nav-item" href="">Wyświetl wyniki</a>
-       </div>
-   </nav>
+    <nav th:replace="~{fragments/navigation :: nav}"> </nav>
 
     <section id="home-page-section">
         <div class="container">
@@ -24,7 +17,10 @@
             </div>
             <div style="text-align: center">
                 <h2 style="font-size: 2em">Pomiary czynników szkodliwych na stanowiskach pracy</h2>
-                <p style="font-weight: 200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa debitis dolorum illum minus non quam voluptates. Accusamus corporis cumque, ea eius eveniet exercitationem facilis, id illum iste minus nisi nobis numquam officiis porro quibusdam quos saepe, tempora veritatis vitae voluptatibus. Corporis esse fugiat illo laborum odio omnis, repudiandae sint sunt.</p>
+                <p style="font-weight: 200">
+                    Zgodnie z przepisami rozporządzenia Ministra Zdrowia z dnia 2 lutego 2011 r. w sprawie badań i pomiarów czynników szkodliwych dla zdrowia w środowisku pracy (Dz. U. z 2011 r. Nr 33, poz. 166), pracodawca wskazuje czynniki szkodliwe dla zdrowia w środowisku pracy, dla których wykonuje się badania i pomiary. <br/>
+                    Badania i pomiary wykonuje się po przeprowadzeniu rozpoznania źródeł ich emisji oraz warunków wykonywania pracy, które mają wpływ na poziom stężeń lub natężeń tych czynników, lub na poziom narażenia na oddziaływanie tych czynników.
+                </p>
             </div>
             <div style="display: flex; flex-direction: row; justify-content: center">
                 <a class="btn" href="">Wprowadź wynik pomiaru</a>
