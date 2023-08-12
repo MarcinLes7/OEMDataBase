@@ -1,4 +1,4 @@
-# OEMDataBase_test
+# OEMDataBase
 Marcin Leśniak, Studia podyplomowe Java Web Development 2022/2023,
 
 Nazwa projektu: Occupational Exposure Measurements Database - Baza wyników pomiarów czynników szkodliwych na stanowiskach pracy.

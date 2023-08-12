@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>pl.wszib</groupId>
-    <artifactId>OEMDataBase_test</artifactId>
+    <artifactId>OEMDataBase</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>OEMDataBase_test</name>
     <description>OEMDataBase_test</description>
