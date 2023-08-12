@@ -1,4 +1,4 @@
-package pl.wszib.oemdatabase_test;
+package pl.wszib.oemdatabase;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

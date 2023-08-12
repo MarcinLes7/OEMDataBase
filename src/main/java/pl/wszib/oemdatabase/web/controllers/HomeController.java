@@ -1,4 +1,4 @@
-package pl.wszib.oemdatabase_test.web.controllers;
+package pl.wszib.oemdatabase.web.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

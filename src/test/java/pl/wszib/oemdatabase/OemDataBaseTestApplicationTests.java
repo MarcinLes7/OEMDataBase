@@ -1,4 +1,4 @@
-package pl.wszib.oemdatabase_test;
+package pl.wszib.oemdatabase;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
