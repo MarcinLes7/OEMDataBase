@@ -1,10 +1,10 @@
 package pl.wszib.oemdatabase.web.mappers;
 
 import pl.wszib.oemdatabase.data.entities.WorkplaceEntity;
-import pl.wszib.oemdatabase.web.models.WorkplaceModel;
+import pl.wszib.oemdatabase.web.models.WorkplaceMeasurementModel;
 
 public class WorkplaceMapper {
-    public static WorkplaceEntity toEntity(WorkplaceModel model) {
+    public static WorkplaceEntity toEntity(WorkplaceMeasurementModel model) {
         WorkplaceEntity entity = new WorkplaceEntity();
         entity.setDepartment(model.getDepartment());
         entity.setPhase(model.getPhase());

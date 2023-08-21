@@ -2,7 +2,7 @@ package pl.wszib.oemdatabase.web.models;
 
 import jakarta.validation.constraints.Size;
 
-public class WorkplaceModel {
+public class WorkplaceMeasurementModel {
     @Size(min=2, max=50)
     private String department;
     @Size(min=2, max=50)

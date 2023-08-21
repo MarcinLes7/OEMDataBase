@@ -1,6 +1,7 @@
 package pl.wszib.oemdatabase.services;
 
 import jakarta.persistence.EntityNotFoundException;
+import java.util.List;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 import pl.wszib.oemdatabase.data.entities.FactorEntity;

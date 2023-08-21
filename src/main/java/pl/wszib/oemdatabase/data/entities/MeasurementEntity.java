@@ -1,6 +1,13 @@
 package pl.wszib.oemdatabase.data.entities;
 
-import jakarta.persistence.*;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "measurements")
@@ -19,7 +26,7 @@ public class MeasurementEntity {
     private String date;
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "workplace_id")
-    private WorkplaceEntity workplaceId;
+    private WorkplaceEntity workplaceMeasurement;
     public Long getId() {
         return id;
     }
@@ -50,10 +57,10 @@ public class MeasurementEntity {
     public void setDate(String date) {
         this.date = date;
     }
-    public WorkplaceEntity getWorkplaceId() {
-        return workplaceId;
+    public WorkplaceEntity getWorkplaceMeasurement() {
+        return workplaceMeasurement;
     }
-    public void setWorkplaceId(WorkplaceEntity workplace) {
-        this.workplaceId = workplace;
+    public void setWorkplaceMeasurement(WorkplaceEntity workplaceMeasurement) {
+        this.workplaceMeasurement = workplaceMeasurement;
     }
 }

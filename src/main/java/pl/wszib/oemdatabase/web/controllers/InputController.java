@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import pl.wszib.oemdatabase.services.FactorService;
 import pl.wszib.oemdatabase.services.MeasurementService;
 import pl.wszib.oemdatabase.web.models.FactorModel;
-import pl.wszib.oemdatabase.web.models.WorkplaceModel;
+import pl.wszib.oemdatabase.web.models.WorkplaceMeasurementModel;
 
 @Controller
 public class InputController {
@@ -27,14 +27,14 @@ public class InputController {
     @GetMapping("input/{factor-id}")
     public String inputForm(@PathVariable("factor-id") Long factorId, Model model) {
         final var factor = factorService.getById(factorId);
-        model.addAttribute("workplaceMeasurement", new WorkplaceModel());
+        model.addAttribute("workplaceMeasurement", new WorkplaceMeasurementModel());
         model.addAttribute("factor", factor);
         return "inputPage";
     }
 
     @PostMapping("input/{factor-id}")
     public String input(@PathVariable("factor-id") Long factorId,
-                        @Valid @ModelAttribute("workplaceMeasurement") WorkplaceModel workplaceModel,
+                        @Valid @ModelAttribute("workplaceMeasurement") WorkplaceMeasurementModel workplaceMeasurementModel,
                         BindingResult result,
                         Model model) {
         if (result.hasErrors()) {
@@ -42,7 +42,7 @@ public class InputController {
             model.addAttribute("factor", factor);
             return "factorPage";
         }
-        final var measurementId = measurementService.saveMeasurement(factorId, workplaceModel);
+        final var measurementId = measurementService.saveMeasurement(factorId, workplaceMeasurementModel);
         model.addAttribute("measurementId", measurementId);
         return "measurementConfirmationPage";
     }

@@ -9,7 +9,7 @@ import pl.wszib.oemdatabase.data.entities.WorkplaceEntity;
 import pl.wszib.oemdatabase.data.repositories.FactorRepository;
 import pl.wszib.oemdatabase.data.repositories.MeasurementRepository;
 import pl.wszib.oemdatabase.web.mappers.WorkplaceMapper;
-import pl.wszib.oemdatabase.web.models.WorkplaceModel;
+import pl.wszib.oemdatabase.web.models.WorkplaceMeasurementModel;
 
 @Service
 public class MeasurementService {
@@ -22,18 +22,18 @@ public class MeasurementService {
     }
 
     @Transactional
-    public Long saveMeasurement(Long factorId, WorkplaceModel workplaceModel) {
+    public Long saveMeasurement(Long factorId, WorkplaceMeasurementModel workplaceMeasurementModel) {
         FactorEntity factorEntity = factorRepository.findById(factorId)
                 .orElseThrow(EntityNotFoundException::new);
 
-        WorkplaceEntity workplaceEntity = WorkplaceMapper.toEntity(workplaceModel);
+        WorkplaceEntity workplaceEntity = WorkplaceMapper.toEntity(workplaceMeasurementModel);
 
         MeasurementEntity measurementEntity = new MeasurementEntity();
         measurementEntity.setFactorName(factorEntity.getName());
         measurementEntity.setNds(factorEntity.getNds());
         measurementEntity.setMeasurementResult(measurementEntity.getMeasurementResult());
         measurementEntity.setDate(measurementEntity.getDate());
-        measurementEntity.setWorkplaceId(workplaceEntity);
+        measurementEntity.setWorkplaceMeasurement(workplaceEntity);
 
         final var savedMeasurement = measurementRepository.save(measurementEntity);
         return savedMeasurement.getId();
