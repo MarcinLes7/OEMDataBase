@@ -3,8 +3,8 @@
       th:replace="~{fragments/layout :: template (~{:: #oem-content})}">
 <section id="oem-content">
   <div class="container">
-    <h1 style="text-align: center">Wprowadzanie i edycja czynników szkodliwych w bazie</h1>
-    <table style="width: 100%">
+    <h1>Wprowadzanie i edycja czynników szkodliwych w bazie</h1>
+    <table>
       <tr th:each="factor : ${factors}">
         <td>
           <h3 th:text="${factor.name}"></h3>

@@ -3,9 +3,8 @@
       th:replace="~{fragments/layout :: template (~{:: #register-content})}">
 <section id="register-content">
     <div class="container">
-        <h1 style="text-align: center">Wprowadzanie wyników pomiarów czynników szkodliwych na stanowiskach pracy do
-            bazy</h1>
-        <table style="width: 100%">
+        <h1>Wprowadzanie wyników pomiarów czynników szkodliwych na stanowiskach pracy do bazy</h1>
+        <table>
             <tr th:each="factor : ${factors}">
                 <td>
                     <h3 th:text="${factor.name}"></h3>

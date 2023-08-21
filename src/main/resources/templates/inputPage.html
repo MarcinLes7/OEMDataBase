@@ -3,8 +3,7 @@
       th:replace="~{fragments/layout :: template (~{:: #input-content})}">
 <section id="input-content">
     <div class="container">
-        <h1 style="text-align: center">Wprowadzanie wyników pomiarów, danych stanowiska pracy i wykonywanych
-            czynności</h1>
+        <h1>Wprowadzanie wyników pomiarów, danych stanowiska pracy i wykonywanych czynności</h1>
         <div>
             <h3 th:text="${factor.name}"></h3>
             <p th:text="${factor.description}"></p>
@@ -46,12 +45,3 @@
     </div>
 </section>
 </html>
-
-
-<!--trzeba dodac jeszcze poniższe pola-->
-<!--<div>
-             <input type="text" placeholder="Wynik pomiaru" class="input">
-         </div>
-         <div>
-             <input type="text" placeholder="Data" class="input">
-         </div>-->
