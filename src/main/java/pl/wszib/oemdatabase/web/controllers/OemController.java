@@ -24,7 +24,7 @@ public class OemController {
         return "oemPanelPage";
     }
 
-    @PostMapping("factor/delete{factor-id}")
+    @PostMapping("factor/delete/{factor-id}")
     public String deleteFactor(@PathVariable("factor-id") Long factorId) {
         factorService.deleteById(factorId);
         return "redirect:/oem-panel";
