@@ -11,7 +11,7 @@
           <p th:text="${factor.description}"></p>
         </td>
         <td style="text-align: center">
-          <h3 th:text="|${factor.nds} ${factor.unit}|"></h3>
+          <h3 th:text="|${factor.oel} ${factor.unit}|"></h3>
           <div class="oem-actions">
             <a th:href="@{/oem-panel/factor/edit/{factor-id}(factor-id=${factor.id})}" class="btn btn-sm">Edytuj</a>
             <form method="post" th:action="@{/oem-panel/factor/delete/{factor-id}(factor-id=${factor.id})}">

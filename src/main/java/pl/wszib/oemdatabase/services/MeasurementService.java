@@ -30,7 +30,7 @@ public class MeasurementService {
 
         MeasurementEntity measurementEntity = new MeasurementEntity();
         measurementEntity.setFactorName(factorEntity.getName());
-        measurementEntity.setNds(factorEntity.getNds());
+        measurementEntity.setOel(factorEntity.getOel());
         measurementEntity.setMeasurementResult(measurementEntity.getMeasurementResult());
         measurementEntity.setDate(measurementEntity.getDate());
         measurementEntity.setWorkplaceMeasurement(workplaceEntity);

@@ -4,12 +4,9 @@ import jakarta.persistence.EntityNotFoundException;
 import java.util.List;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
-import pl.wszib.oemdatabase.data.entities.FactorEntity;
 import pl.wszib.oemdatabase.data.repositories.FactorRepository;
 import pl.wszib.oemdatabase.web.mappers.FactorMapper;
 import pl.wszib.oemdatabase.web.models.FactorModel;
-
-import java.util.List;
 
 @Service
 public class FactorService {
@@ -49,7 +46,7 @@ public class FactorService {
 
         entity.setName(factorModel.getName());
         entity.setDescription(factorModel.getDescription());
-        entity.setNds(factorModel.getNds());
+        entity.setOel(factorModel.getOel());
         entity.setUnit(factorModel.getUnit());
     }
 }

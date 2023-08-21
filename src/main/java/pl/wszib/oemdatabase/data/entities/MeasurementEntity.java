@@ -18,8 +18,8 @@ public class MeasurementEntity {
     private Long id;
     @Column(name = "factor_name")
     private String factorName;
-    @Column(name = "nds")
-    private double nds;
+    @Column(name = "ole")
+    private double oel;
     @Column(name = "measurement_result")
     private double measurementResult;
     @Column(name = "date")
@@ -39,11 +39,11 @@ public class MeasurementEntity {
     public void setFactorName(String factor_name) {
         this.factorName = factor_name;
     }
-    public double getNds() {
-        return nds;
+    public double getOel() {
+        return oel;
     }
-    public void setNds(double nds) {
-        this.nds = nds;
+    public void setOel(double oel) {
+        this.oel = oel;
     }
     public double getMeasurementResult() {
         return measurementResult;

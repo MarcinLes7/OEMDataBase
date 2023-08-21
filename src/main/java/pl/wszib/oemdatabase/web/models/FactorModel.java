@@ -6,7 +6,7 @@ public class FactorModel {
     private Long id;
     private String name;
     @Pattern(regexp = "[0-9]{3}")
-    private double nds;
+    private double oel;
     private String unit;
     private String description;
 
@@ -14,10 +14,10 @@ public class FactorModel {
 
     }
 
-    public FactorModel(Long id, String name, double nds, String unit, String description) {
+    public FactorModel(Long id, String name, double oel, String unit, String description) {
         this.id = id;
         this.name = name;
-        this.nds = nds;
+        this.oel = oel;
         this.unit = unit;
         this.description = description;
     }
@@ -36,11 +36,11 @@ public class FactorModel {
         this.name = name;
     }
 
-    public double getNds() {
-        return nds;
+    public double getOel() {
+        return oel;
     }
-    public void setNds(double nds) {
-        this.nds = nds;
+    public void setOel(double oel) {
+        this.oel = oel;
     }
 
     public String getUnit() {

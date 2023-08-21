@@ -1,5 +1,4 @@
 package pl.wszib.oemdatabase.data.entities;
-import jakarta.persistence.*;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,8 +14,8 @@ public class FactorEntity {
     private Long id;
     @Column(name = "name")
     private String name;
-    @Column(name = "nds")
-    private double nds;
+    @Column(name = "oel")
+    private double oel;
     @Column(name = "unit")
     private String unit;
     @Column(name = "description")
@@ -34,11 +33,11 @@ public class FactorEntity {
     public void setName(String name) {
         this.name = name;
     }
-    public double getNds() {
-        return nds;
+    public double getOel() {
+        return oel;
     }
-    public void setNds(double nds) {
-        this.nds = nds;
+    public void setOel(double oel) {
+        this.oel = oel;
     }
     public String getUnit() {
         return unit;
