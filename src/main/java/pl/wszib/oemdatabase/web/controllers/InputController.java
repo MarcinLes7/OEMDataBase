@@ -40,7 +40,7 @@ public class InputController {
         if (result.hasErrors()) {
             FactorModel factor = factorService.getById(factorId);
             model.addAttribute("factor", factor);
-            return "factorPage";
+            return "inputPage";
         }
         final var measurementId = measurementService.saveMeasurement(factorId, workplaceModel);
         model.addAttribute("measurementId", measurementId);

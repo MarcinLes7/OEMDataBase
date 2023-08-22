@@ -2,27 +2,28 @@ package pl.wszib.oemdatabase.web.models;
 
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+import org.hibernate.validator.constraints.Range;
 
 import java.math.BigDecimal;
 
 public class WorkplaceModel {
-    @Size(min=0, max=5)
+    @Range(min=1, max=5)
     private BigDecimal measurementResult;
-    @Size(min=2, max=50)
+    @Size(min=1, max=50)
     private String date;
-    @Size(min=2, max=50)
+    @Size(min=1, max=50)
     private String department;
-    @Size(min=2, max=50)
+    @Size(min=1, max=50)
     private String phase;
-    @Size(min=2, max=50)
+    @Size(min=1, max=50)
     private String room;
-    @Size(min=2, max=500)
+    @Size(min=1, max=500)
     private String activity;
-    @Size(min=2, max=50)
+    @Size(min=1, max=50)
     private String firstName;
-    @Size(min=2, max=50)
+    @Size(min=1, max=50)
     private String lastName;
-    @Size(min=2, max=500)
+    @Size(min=1, max=500)
     private String ppe;
 
     public BigDecimal getMeasurementResult() {
