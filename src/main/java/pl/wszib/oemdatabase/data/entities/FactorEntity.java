@@ -5,6 +5,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "factors")
 public class FactorEntity {
@@ -15,7 +17,7 @@ public class FactorEntity {
     @Column(name = "name")
     private String name;
     @Column(name = "oel")
-    private double oel;
+    private BigDecimal oel;
     @Column(name = "unit")
     private String unit;
     @Column(name = "description")
@@ -33,10 +35,10 @@ public class FactorEntity {
     public void setName(String name) {
         this.name = name;
     }
-    public double getOel() {
+    public BigDecimal getOel() {
         return oel;
     }
-    public void setOel(double oel) {
+    public void setOel(BigDecimal oel) {
         this.oel = oel;
     }
     public String getUnit() {

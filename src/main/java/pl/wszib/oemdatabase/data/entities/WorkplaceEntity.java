@@ -6,6 +6,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "workplaces")
 public class WorkplaceEntity {
@@ -14,7 +16,7 @@ public class WorkplaceEntity {
     @Column(name = "id")
     private Long id;
     @Column(name = "measurement_result")
-    private double measurementResult;
+    private BigDecimal measurementResult;
     @Column(name = "date")
     private String date;
     @Column(name = "department")
@@ -40,11 +42,11 @@ public class WorkplaceEntity {
         this.id = id;
     }
 
-    public double getMeasurementResult() {
+    public BigDecimal getMeasurementResult() {
         return measurementResult;
     }
 
-    public void setMeasurementResult(double measurementResult) {
+    public void setMeasurementResult(BigDecimal measurementResult) {
         this.measurementResult = measurementResult;
     }
 

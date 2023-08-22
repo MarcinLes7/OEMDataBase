@@ -3,10 +3,11 @@ package pl.wszib.oemdatabase.web.models;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
+import java.math.BigDecimal;
+
 public class WorkplaceModel {
     @Size(min=0, max=5)
-    @Pattern(regexp = "[0-9]{5}")
-    private double measurementResult;
+    private BigDecimal measurementResult;
     @Size(min=2, max=50)
     private String date;
     @Size(min=2, max=50)
@@ -24,11 +25,11 @@ public class WorkplaceModel {
     @Size(min=2, max=500)
     private String ppe;
 
-    public double getMeasurementResult() {
+    public BigDecimal getMeasurementResult() {
         return measurementResult;
     }
 
-    public void setMeasurementResult(double measurementResult) {
+    public void setMeasurementResult(BigDecimal measurementResult) {
         this.measurementResult = measurementResult;
     }
 

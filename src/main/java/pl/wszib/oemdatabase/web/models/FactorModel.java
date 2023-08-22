@@ -2,10 +2,12 @@ package pl.wszib.oemdatabase.web.models;
 
 import jakarta.validation.constraints.Pattern;
 
+import java.math.BigDecimal;
+
 public class FactorModel {
     private Long id;
     private String name;
-    private double oel;
+    private BigDecimal oel;
     private String unit;
     private String description;
 
@@ -13,7 +15,7 @@ public class FactorModel {
 
     }
 
-    public FactorModel(Long id, String name, double oel, String unit, String description) {
+    public FactorModel(Long id, String name, BigDecimal oel, String unit, String description) {
         this.id = id;
         this.name = name;
         this.oel = oel;
@@ -35,10 +37,10 @@ public class FactorModel {
         this.name = name;
     }
 
-    public double getOel() {
+    public BigDecimal getOel() {
         return oel;
     }
-    public void setOel(double oel) {
+    public void setOel(BigDecimal oel) {
         this.oel = oel;
     }
 

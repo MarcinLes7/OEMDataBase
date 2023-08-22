@@ -9,6 +9,8 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "measurements")
 public class MeasurementEntity {
@@ -19,7 +21,7 @@ public class MeasurementEntity {
     @Column(name = "factor_name")
     private String factorName;
     @Column(name = "oel")
-    private double oel;
+    private BigDecimal oel;
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "workplace_id")
     private WorkplaceEntity workplace;
@@ -40,11 +42,11 @@ public class MeasurementEntity {
         this.factorName = factorName;
     }
 
-    public double getOel() {
+    public BigDecimal getOel() {
         return oel;
     }
 
-    public void setOel(double oel) {
+    public void setOel(BigDecimal oel) {
         this.oel = oel;
     }
 
