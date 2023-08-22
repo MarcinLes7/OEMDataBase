@@ -15,6 +15,7 @@ public class FactorMapper {
 
     public static FactorEntity toEntity(FactorModel model) {
         final var entity = new FactorEntity();
+
         entity.setName(model.getName());
         entity.setOel(model.getOel());
         entity.setUnit(model.getUnit());

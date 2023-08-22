@@ -13,6 +13,10 @@ public class WorkplaceEntity {
     @GeneratedValue
     @Column(name = "id")
     private Long id;
+    @Column(name = "measurement_result")
+    private double measurementResult;
+    @Column(name = "date")
+    private String date;
     @Column(name = "department")
     private String department;
     @Column(name = "phase")
@@ -34,6 +38,22 @@ public class WorkplaceEntity {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public double getMeasurementResult() {
+        return measurementResult;
+    }
+
+    public void setMeasurementResult(double measurementResult) {
+        this.measurementResult = measurementResult;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public String getDepartment() {
@@ -72,16 +92,16 @@ public class WorkplaceEntity {
         return firstName;
     }
 
-    public void setFirstName(String first_name) {
-        this.firstName = first_name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String last_name) {
-        this.lastName = last_name;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getPpe() {

@@ -15,6 +15,7 @@ public class RegisterController {
     public RegisterController(FactorService factorService) {
         this.factorService = factorService;
     }
+
     @GetMapping("register")
     public String registerPage(Model model) {
         final var factors = factorService.findAll();

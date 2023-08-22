@@ -9,7 +9,15 @@
             <p th:text="${factor.description}"></p>
             <p th:text="|${factor.oel} ${factor.unit}|"></p>
         </div>
-        <form method="post" th:object="${workplaceMeasurement}" th:action="@{/input/{factorId}(factorId=${factor.id})}">
+        <form method="post" th:object="${workplace}" th:action="@{/input/{factorId}(factorId=${factor.id})}">
+            <div>
+                <input th:field="*{measurementResult}" type="number" step="any" placeholder="Wynik pomiaru na stanowisku" class="input">
+                <span class="error-msg" th:if="${#fields.hasErrors('measurementResult')}">Wynik pomiaru powinna składać się z conajmniej 1 znaku </span>
+            </div>
+            <div>
+                <input th:field="*{date}" type="text" placeholder="Data" class="input">
+                <span class="error-msg" th:if="${#fields.hasErrors('date')}">Data powinna składać się z conajmniej 3 znaków </span>
+            </div>
             <div>
                 <input th:field="*{department}" type="text" placeholder="Wydział" class="input">
                 <span class="error-msg" th:if="${#fields.hasErrors('department')}">Nazwa wydziału powinna składać się z conajmniej 3 znaków</span>

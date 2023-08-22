@@ -5,7 +5,6 @@ import jakarta.validation.constraints.Pattern;
 public class FactorModel {
     private Long id;
     private String name;
-    @Pattern(regexp = "[0-9]{3}")
     private double oel;
     private String unit;
     private String description;

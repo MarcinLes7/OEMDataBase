@@ -18,49 +18,42 @@ public class MeasurementEntity {
     private Long id;
     @Column(name = "factor_name")
     private String factorName;
-    @Column(name = "ole")
+    @Column(name = "oel")
     private double oel;
-    @Column(name = "measurement_result")
-    private double measurementResult;
-    @Column(name = "date")
-    private String date;
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "workplace_id")
-    private WorkplaceEntity workplaceMeasurement;
+    private WorkplaceEntity workplace;
+
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
+
     public String getFactorName() {
         return factorName;
     }
-    public void setFactorName(String factor_name) {
-        this.factorName = factor_name;
+
+    public void setFactorName(String factorName) {
+        this.factorName = factorName;
     }
+
     public double getOel() {
         return oel;
     }
+
     public void setOel(double oel) {
         this.oel = oel;
     }
-    public double getMeasurementResult() {
-        return measurementResult;
+
+    public WorkplaceEntity getWorkplace() {
+        return workplace;
     }
-    public void setMeasurementResult(double measurement_result) {
-        this.measurementResult = measurement_result;
+
+    public void setWorkplace(WorkplaceEntity workplace) {
+        this.workplace = workplace;
     }
-    public String getDate() {
-        return date;
-    }
-    public void setDate(String date) {
-        this.date = date;
-    }
-    public WorkplaceEntity getWorkplaceMeasurement() {
-        return workplaceMeasurement;
-    }
-    public void setWorkplaceMeasurement(WorkplaceEntity workplaceMeasurement) {
-        this.workplaceMeasurement = workplaceMeasurement;
-    }
+
 }

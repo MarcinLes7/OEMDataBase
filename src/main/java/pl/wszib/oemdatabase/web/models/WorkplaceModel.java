@@ -1,8 +1,14 @@
 package pl.wszib.oemdatabase.web.models;
 
+import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
-public class WorkplaceMeasurementModel {
+public class WorkplaceModel {
+    @Size(min=0, max=5)
+    @Pattern(regexp = "[0-9]{5}")
+    private double measurementResult;
+    @Size(min=2, max=50)
+    private String date;
     @Size(min=2, max=50)
     private String department;
     @Size(min=2, max=50)
@@ -17,6 +23,22 @@ public class WorkplaceMeasurementModel {
     private String lastName;
     @Size(min=2, max=500)
     private String ppe;
+
+    public double getMeasurementResult() {
+        return measurementResult;
+    }
+
+    public void setMeasurementResult(double measurementResult) {
+        this.measurementResult = measurementResult;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 
     public String getDepartment() {
         return department;
