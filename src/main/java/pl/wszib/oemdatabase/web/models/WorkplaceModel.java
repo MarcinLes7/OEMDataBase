@@ -7,9 +7,10 @@ import org.hibernate.validator.constraints.Range;
 import java.math.BigDecimal;
 
 public class WorkplaceModel {
-    @Range(min=1, max=5)
+    @Range(min=0, max=1000)
     private BigDecimal measurementResult;
     @Size(min=1, max=50)
+    @Pattern(regexp = "[0-9]{4}-[0-9]{2}-[0-9]{2}")
     private String date;
     @Size(min=1, max=50)
     private String department;

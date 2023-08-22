@@ -10,43 +10,43 @@
             <p th:text="|${factor.oel} ${factor.unit}|"></p>
         </div>
         <form method="post" th:object="${workplace}" th:action="@{/input/{factorId}(factorId=${factor.id})}">
-            <div class="form-row">
+            <div class="form-field">
                 <input th:field="*{measurementResult}" type="number" step="any" placeholder="Wynik pomiaru na stanowisku" class="input">
-                <span class="error-msg" th:if="${#fields.hasErrors('measurementResult')}">Wynik pomiaru powinien składać się z conajmniej 1 znaku </span>
+                <span class="error-msg" th:if="${#fields.hasErrors('measurementResult')}">Wynik pomiaru w zakresie od 0 do 1000</span>
             </div>
-            <div class="form-row">
+            <div class="form-field">
                 <input th:field="*{date}" type="text" placeholder="Data" class="input">
-                <span class="error-msg" th:if="${#fields.hasErrors('date')}">Data powinna składać się z conajmniej 3 znaków </span>
+                <span class="error-msg" th:if="${#fields.hasErrors('date')}">Format daty: XXXX-XX-XX </span>
             </div>
-            <div class="form-row">
+            <div class="form-field">
                 <input th:field="*{department}" type="text" placeholder="Wydział" class="input">
-                <span class="error-msg" th:if="${#fields.hasErrors('department')}">Nazwa wydziału powinna składać się z conajmniej 3 znaków</span>
+                <span class="error-msg" th:if="${#fields.hasErrors('department')}">Nazwa wydziału: minimum 1 znak</span>
             </div>
-            <div class="form-row">
+            <div class="form-field">
                 <input th:field="*{room}" type="text" placeholder="Numer pomieszczenia" class="input">
-                <span class="error-msg" th:if="${#fields.hasErrors('room')}">Nazwa pomieszczenia powinna składać się z conajmniej 3 znaków </span>
+                <span class="error-msg" th:if="${#fields.hasErrors('room')}">Nazwa pomieszczenia: minimum 1 znak</span>
             </div>
-            <div class="form-row">
+            <div class="form-field">
                 <input th:field="*{phase}" type="text" placeholder="Faza operacyjna" class="input">
-                <span class="error-msg" th:if="${#fields.hasErrors('phase')}">Nazwa fazy powinna składać się z conajmniej 3 znaków </span>
+                <span class="error-msg" th:if="${#fields.hasErrors('phase')}">Nazwa fazy: minimum 1 znak</span>
             </div>
-            <div class="form-row">
+            <div class="form-field">
                 <input th:field="*{activity}" type="text" placeholder="Czynność" class="input">
-                <span class="error-msg" th:if="${#fields.hasErrors('activity')}">Nazwa czynności pomieszczenia powinna składać się z conajmniej 3 znaków </span>
+                <span class="error-msg" th:if="${#fields.hasErrors('activity')}">Nazwa czynności: minimum 1 znak</span>
             </div>
-            <div class="form-row">
+            <div class="form-field">
                 <input th:field="*{firstName}" type="text" placeholder="Imię" class="input">
-                <span class="error-msg" th:if="${#fields.hasErrors('firstName')}">Imię powinno składać się z conajmniej 3 znaków </span>
+                <span class="error-msg" th:if="${#fields.hasErrors('firstName')}">Imię: minimum 1 znak</span>
             </div>
-            <div class="form-row">
+            <div class="form-field">
                 <input th:field="*{lastName}" type="text" placeholder="Nazwisko" class="input">
-                <span class="error-msg" th:if="${#fields.hasErrors('lastName')}">Nazwisko powinno składać się z conajmniej 3 znaków </span>
+                <span class="error-msg" th:if="${#fields.hasErrors('lastName')}">Nazwisko: minimum 1 znak</span>
             </div>
-            <div class="form-row">
+            <div class="form-field">
                 <input th:field="*{ppe}" type="text" placeholder="Środki ochrony indywidualnej" class="input">
-                <span class="error-msg" th:if="${#fields.hasErrors('ppe')}">Nazwa PPE powinna składać się z conajmniej 3 znaków </span>
+                <span class="error-msg" th:if="${#fields.hasErrors('ppe')}">Środki ochrony indywidualnej: minimum 1 znak</span>
             </div>
-            <div class="form-row">
+            <div>
                 <button class="btn">Zapisz</button>
             </div>
         </form>

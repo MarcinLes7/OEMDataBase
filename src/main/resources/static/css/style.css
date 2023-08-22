@@ -1,8 +1,8 @@
 /* Podstawowa konfiguracja strony*/
 :root {
     --primary: #222222;
-    --secondary: #1E87F0;
-    --warning: #F0506E;
+    --secondary: #008000;
+    --warning: #FE7F00;
     --white: #FFFFFF;
 }
 
@@ -92,13 +92,36 @@ section {
     margin: 30px 0;
 }
 
-/*Strona factorPage oraz strona inputPage*/
+/*Strona factorPage*/
 
 #factor-content .form-row {
     display: flex;
     flex-direction: row;
     gap: 50px;
     padding: 5px;
+}
+
+/*Strona inputPage*/
+#input-content h1 {
+    text-align: center
+}
+
+#input-content .form-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#input-content form div {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+#input-content .error-msg {
+    font-size: 0.8em;
+    color: var(--warning);
+    padding: 3px 0;
 }
 
 .input, .textbox {
@@ -108,11 +131,8 @@ section {
     box-sizing: border-box;
 }
 
-#input-content form div {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 0;
-}
+
+
 
 /*Strona factorsDescriptionPage*/
 #factors-description-content h1 {
@@ -182,11 +202,6 @@ section {
     width: 100%;
     height: 300px;
     object-fit: cover
-}
-
-/*Strona inputPage*/
-#input-content h1 {
-    text-align: center
 }
 
 /*Stroan RegisterPage*/

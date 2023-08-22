@@ -7,15 +7,19 @@
     <form th:object="${factor}" method="post">
       <div class="form-row">
         <input placeholder="Nazwa czynnika" th:field="*{name}" type="text" class="input"/>
+        <span class="error-msg" th:if="${#fields.hasErrors('name')}">Nazwa czynnika: minimum 1 znak</span>
       </div>
       <div class="form-row">
         <textarea placeholder="Opis czynnika" th:field="*{description}" class="textbox"></textarea>
+        <span class="error-msg" th:if="${#fields.hasErrors('description')}">Nazwa wydziału: minimum 1 znak</span>
       </div>
       <div class="form-row">
-        <input placeholder="oel" th:field="*{oel}" type="number" step="0.01" class="input"/>
+        <input placeholder="oel" th:field="*{oel}" type="number" step="any" class="input"/>
+        <span class="error-msg" th:if="${#fields.hasErrors('oel')}">Wartość NDS w zakresie od 0 do 1000</span>
       </div>
       <div class="form-row">
         <input placeholder="jednostka" th:field="*{unit}" type="text" class="input"/>
+        <span class="error-msg" th:if="${#fields.hasErrors('unit')}">Jednostka: minimum 1 znak</span>
       </div>
       <div class="form-row">
         <button class="btn">Dodaj (Aktualizuj dane)</button>

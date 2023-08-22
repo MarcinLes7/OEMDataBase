@@ -1,14 +1,20 @@
 package pl.wszib.oemdatabase.web.models;
 
 import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
+import org.hibernate.validator.constraints.Range;
 
 import java.math.BigDecimal;
 
 public class FactorModel {
     private Long id;
+    @Size(min=1, max=50)
     private String name;
+    @Range(min=0, max=1000)
     private BigDecimal oel;
+    @Size(min=1, max=50)
     private String unit;
+    @Size(min=1, max=500)
     private String description;
 
     public FactorModel() {
