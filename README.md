@@ -26,7 +26,7 @@ Poziomy pasek nawigacji w częsci nagłówkowej strony startowej składa się z 
 - odnośnika **"Baza czynników"** prowadzącego do strony z wybieralną listą czynników szkodliwych zawierająca także wartości najwyższych dopuszczalnych stężen i natężeń tych czynników,
 - odnośnika **"Wyświetl wyniki pomiarów"** prowadzącego do strony z podsumowaniem wykonanych i zapisanych w bazie wyników pomiarów na stanowiskach pracy,
 
-![OEMDatabase](./src/main/resources/assets/images/OEMDatabase.jpg "OEMDatabase")
+![Baza danych OEM!](./src/main/resources/assets/images/oemDatabase.jpg "OEMDatabase")
 
 ### Strona "Opis czynników szkodliwych"
 Strona otwierająca się po kliknięciu na odnośnik "opis czynników szkodliwych"  opisuje najczęściej występujące w środowisku pracy czynniki szkodliwe. Skupia się na wyjaśnieniu definicji czynnika szkodliwego otakiego jak np hałas lub czynniki chemiczne, następnie opisuje sposób działania szkodliwego czynnika na organizm człowieka oraz przywołuje wartości najwyższych dopuszczalnych stężeń i natężeń dla tych czynników. Na stronie znajduje sie także wyjaśnienie definicji najwyższego dopuszczalnego stężenia oraz Najwyższego dopuszczalnego natężenia. Dodatkowo na stronei znajduje się wyjasnienie pojęcia OEL, które jest równoznaczne z pojęciem NDS / NDN stosowanym w krajach zachodnich.
