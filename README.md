@@ -67,7 +67,7 @@ Poniżej tabeli z formularzem do wprowadzania danych znajduje się przycisk **"Z
 
 ## Budowa aplikacji "OEM Database"
 Aplikacja internetowa "OEMDatabase" została napisana z użyciem języka Java, HTML oraz CSS. 
-Aplikacja została napisane z użyciem technologii Spring Framework oraz Thymeleaf.
+Aplikacja została napisana z użyciem narzędzi Spring Boot, Maven, SQL Server oraz Thymeleaf.
 
 
 ## Używanie aplikacji
