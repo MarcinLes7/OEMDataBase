@@ -56,3 +56,5 @@ Po kliknięciu na przycisk "wprowadź" przy danym czynniku szkodliwym otwiera si
 Poniżej tabeli z formularzem do wprowadzania danych znajduje się przycisk "Zapisz", którego funkcją jest zapisanie wprowadzonych danych do bazy.
 
 ## Budowa aplikacji "OEM Database"
+Aplikacja internetowa "OEMDatabase" została napisana z użyciem języka Java, HTML oraz CSS. 
+
