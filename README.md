@@ -67,4 +67,13 @@ Poniżej tabeli z formularzem do wprowadzania danych znajduje się przycisk **"Z
 
 ## Budowa aplikacji "OEM Database"
 Aplikacja internetowa "OEMDatabase" została napisana z użyciem języka Java, HTML oraz CSS. 
+Aplikacja została napisane z użyciem technologii Spring Framework oraz Thymeleaf.
 
+
+## Używanie aplikacji
+
+Aplikacja przeznaczona jest do użytku w zakładach pracy w których wystepują czynniki szkodliwe na stanowiskach pracy.
+Pracodawca zainteresowany posiadaniem bazy wykonywanych na stanowiskach pracy pomiarów powinien wprowadzić do bazy czynniki szkodliwe, których 
+pomiary wykonuje. Następnie na podstawie otrzymywanych z laboratorium badawczego raportów z pomiarów pracodawca powinien wprowadzić wyniki pomiarów wykonanych na stanowiskach pracy.
+
+Aplikacja ma za zadanie wyświetlać zebrane wyniki pomiarów na stanowiskach pracy a także wykonywać podstawowe statystyki. W tym celu wymagane jest także wprowadzenie danych dotyczących badanego stanowiska pracy. Dane te podaje się równocześnie z wprowadzanym do bazy wynikiem pomiaru.
