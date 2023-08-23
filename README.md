@@ -35,10 +35,12 @@ Strona otwierająca się po kliknięciu na odnośnik "opis czynników szkodliwyc
 
 ### Strona "Baza czynników"
 Strona "Baza czynników" otwiera sie po kliknięciu na odnośnik "baza czynników". Na stronie znajduje sie interaktywna tabela zawierająca w poszczególnych wierszach nazwy czynników szkodliwych, które mogą występowac na stanowiskach pracy i dla których będa prowadzone pomiary i wprowadzane do bazy wyniki tych pomiarów. Tabela składa się także z dwóch kolumn. Pierwsza kolumna jest kolumną opisową danego czynnika, natomiast w kolumnie drugiej znajduje się wartość najwyższego dopuszczalnego stężenia lub natężenia danego czynnika wynikająca z rozporządzenia oraz dwa przyciski:
-- edytuj - przycisk służy do przekierowania na stronę na której istnieje możliwość edycji danych dla danego czynnika szkodliwego,
-- usuń - przycisk służy do usunięcia danego czynnika szkodliwego z bazy,
+- **edytuj** - przycisk służy do przekierowania na stronę na której istnieje możliwość edycji danych dla danego czynnika szkodliwego,
+- **usuń** - przycisk służy do usunięcia danego czynnika szkodliwego z bazy,
 
-Poniżej tabeli z czynnikami szkodliwymi znajduje sie przycisk "dodaj". Przycisk służy do przekierowania na stronę na której istnieje możliwość dodania nowego czynnika szkodliwego do bazy wraz z wartościami NDS oraz opisem czynnika.
+Poniżej tabeli z czynnikami szkodliwymi znajduje sie przycisk **"dodaj"**. Przycisk służy do przekierowania na stronę na której istnieje możliwość dodania nowego czynnika szkodliwego do bazy wraz z wartościami NDS oraz opisem czynnika.
+
+![Baza czynnikow!](./src/main/resources/assets/images/factorsBase.jpg "Baza czynników szkodliwych")
 
 ### Strona "Wyświetl wyniki pomiarów"
 Strona "wyświetl wyniki pomiarów" ma w założeniu wyświetlać wprowadzone do bazy wyniki pomiarów wraz z parametrami czynników, dla których pomiary były wykonywane.
