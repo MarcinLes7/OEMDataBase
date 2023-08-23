@@ -48,6 +48,8 @@ Strona "wyświetl wyniki pomiarów" ma w założeniu wyświetlać wprowadzone do
 ### Strona "Wprowadzanie wyników pomiarów"
 Wyjście na stronę "Wprowadzanie wyników pomiarów: odbywa sie poprzez kliknięcie na przycisk "Wprowadzanie wyników pomiarów" znajdujący sie na stronie głównej na dole strony. Na stronie "wprowadzanie wyników pomiarów" wyświetla się interaktywna tabela zawierająca w poszczególnych wierszach nazwy czynników chemicznych, które mogą występowac na stanowiskach pracy i dla których będą wprowadzane do bazy wyniki pomiarów. Tabela składa się także z dwóch kolumn. Pierwsza kolumna jest kolumną opisową danego czynnika, natomiast w kolumnie drugiej znajduje się wartość najwyższego dopuszczalnego stężenia lub natężenia danego czynnika wynikająca z rozporządzenia oraz jeden przycisk "wprowadź".
 
+![Wprowadzanie pomiarow!](./src/main/resources/assets/images/measurementPage.jpg "Wprowadzanie wyników pomiarów")
+
 Po kliknięciu na przycisk "wprowadź" przy danym czynniku szkodliwym otwiera się strona zawierająca interaktywny formularz do wprowadzanai danych z pomiaru na stanowisku pracy. W poszczególnych wierszach tabeli należy wprowadzić następujące dane:
 - wynik pomiaru na stanowisku pracy będący liczbą z przedziału od 0 do 1000,
 - datę w formacie xxxx-xx-xx,
