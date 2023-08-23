@@ -50,7 +50,7 @@ Wyjście na stronę "Wprowadzanie wyników pomiarów: odbywa sie poprzez klikni�
 
 ![Wprowadzanie pomiarow!](./src/main/resources/assets/images/measurementPage.jpg "Wprowadzanie wyników pomiarów")
 
-Po kliknięciu na przycisk "wprowadź" przy danym czynniku szkodliwym otwiera się strona zawierająca interaktywny formularz do wprowadzanai danych z pomiaru na stanowisku pracy. W poszczególnych wierszach tabeli należy wprowadzić następujące dane:
+Po kliknięciu na przycisk **"wprowadź"** przy danym czynniku szkodliwym otwiera się strona zawierająca interaktywny formularz do wprowadzanai danych z pomiaru na stanowisku pracy. W poszczególnych wierszach tabeli należy wprowadzić następujące dane:
 - wynik pomiaru na stanowisku pracy będący liczbą z przedziału od 0 do 1000,
 - datę w formacie xxxx-xx-xx,
 - nazwę wydziału,
@@ -61,7 +61,9 @@ Po kliknięciu na przycisk "wprowadź" przy danym czynniku szkodliwym otwiera si
 - nazwisko pracownika wykonującego daną czynność,
 - stosowane przez pracownika środki ochrony indywidualnej,
 
-Poniżej tabeli z formularzem do wprowadzania danych znajduje się przycisk "Zapisz", którego funkcją jest zapisanie wprowadzonych danych do bazy.
+Poniżej tabeli z formularzem do wprowadzania danych znajduje się przycisk **"Zapisz"**, którego funkcją jest zapisanie wprowadzonych danych do bazy.
+
+![Zapisanie wynikow!](./src/main/resources/assets/images/input.jpg "Zapisanie wyników pomiarów")
 
 ## Budowa aplikacji "OEM Database"
 Aplikacja internetowa "OEMDatabase" została napisana z użyciem języka Java, HTML oraz CSS. 
