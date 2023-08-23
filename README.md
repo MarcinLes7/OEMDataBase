@@ -38,3 +38,20 @@ Poniżej tabeli z czynnikami szkodliwymi znajduje sie przycisk "dodaj". Przycisk
 
 ### Strona "Wyświetl wyniki pomiarów"
 Strona "wyświetl wyniki pomiarów" ma w założeniu wyświetlać wprowadzone do bazy wyniki pomiarów wraz z parametrami czynników, dla których pomiary były wykonywane.
+
+### Strona "Wprowadzanie wyników pomiarów"
+Wyjście na stronę "Wprowadzanie wyników pomiarów: odbywa sie poprzez kliknięcie na przycisk "Wprowadzanie wyników pomiarów" znajdujący sie na stronie głównej na dole strony. Na stronie "wprowadzanie wyników pomiarów" wyświetla się interaktywna tabela zawierająca w poszczególnych wierszach nazwy czynników chemicznych, które mogą występowac na stanowiskach pracy i dla których będą wprowadzane do bazy wyniki pomiarów. Tabela składa się także z dwóch kolumn. Pierwsza kolumna jest kolumną opisową danego czynnika, natomiast w kolumnie drugiej znajduje się wartość najwyższego dopuszczalnego stężenia lub natężenia danego czynnika wynikająca z rozporządzenia oraz jeden przycisk "wprowadź".
+
+Po kliknięciu na przycisk "wprowadź" przy danym czynniku szkodliwym otwiera się strona zawierająca interaktywny formularz do wprowadzanai danych z pomiaru na stanowisku pracy. W poszczególnych wierszach tabeli należy wprowadzić następujące dane:
+- wynik pomiaru na stanowisku pracy będący liczbą z przedziału od 0 do 1000,
+- datę w formacie xxxx-xx-xx,
+- nazwę wydziału,
+- numer pomieszczenia,
+- nazwę fazy operacyjnej,
+- nazwę czynności,
+- imię pracownika wykonującego daną czynność,
+- nazwisko pracownika wykonującego daną czynność,
+- stosowane przez pracownika środki ochrony indywidualnej,
+
+Poniżej tabeli z formularzem do wprowadzania danych znajduje się przycisk "Zapisz", którego funkcją jest zapisanie wprowadzonych danych do bazy.
+
