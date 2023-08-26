@@ -6,11 +6,11 @@
     <h1>Wprowadzanie i edycja czynników szkodliwych w bazie</h1>
     <table>
       <tr th:each="factor : ${factors}">
-        <td>
+        <td id="szerokosc">
           <h3 th:text="${factor.name}"></h3>
           <p th:text="${factor.description}"></p>
         </td>
-        <td style="text-align: center">
+        <td style="text-align: right">
           <h3 th:text="|${factor.oel} ${factor.unit}|"></h3>
           <div class="oem-actions">
             <a th:href="@{/oem-panel/factor/edit/{factor-id}(factor-id=${factor.id})}" class="btn btn-sm">Edytuj</a>

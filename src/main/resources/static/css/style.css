@@ -162,6 +162,7 @@ section {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    float: right;
 }
 
 #oem-content .factor-list-actions {
@@ -176,6 +177,10 @@ section {
 #oem-content table {
     width: 100%
 }
+#szerokosc {
+    width: 80%;
+}
+
 
 /*Strona homePage*/
 
