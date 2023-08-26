@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "measurements")
+@Table(name = "measurements", schema="oem")
 public class MeasurementEntity {
     @Id
     @GeneratedValue

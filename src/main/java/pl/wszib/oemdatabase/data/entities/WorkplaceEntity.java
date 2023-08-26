@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "workplaces")
+@Table(name = "workplaces", schema="oem")
 public class WorkplaceEntity {
     @Id
     @GeneratedValue
