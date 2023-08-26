@@ -5,13 +5,12 @@ import jakarta.validation.constraints.Size;
 import org.hibernate.validator.constraints.Range;
 
 import java.math.BigDecimal;
+import java.sql.Date;
 
 public class WorkplaceModel {
     @Range(min=0, max=1000)
     private BigDecimal measurementResult;
-    @Size(min=1, max=50)
-    @Pattern(regexp = "[0-9]{4}-[0-9]{2}-[0-9]{2}")
-    private String ctime;
+    private Date ctime;
     @Size(min=1, max=50)
     private String department;
     @Size(min=1, max=50)
@@ -35,11 +34,11 @@ public class WorkplaceModel {
         this.measurementResult = measurementResult;
     }
 
-    public String getCtime() {
+    public Date getCtime() {
         return ctime;
     }
 
-    public void setCtime(String ctime) {
+    public void setCtime(Date ctime) {
         this.ctime = ctime;
     }
 

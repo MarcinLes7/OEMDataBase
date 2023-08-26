@@ -6,6 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 import java.math.BigDecimal;
+import java.sql.Date;
 
 @Entity
 @Table(name = "workplaces", schema="oem")
@@ -16,8 +17,8 @@ public class WorkplaceEntity {
     private Long id;
     @Column(name = "measurement_result")
     private BigDecimal measurementResult;
-    @Column(name = "date")
-    private String ctime;
+    @Column(name = "ctime")
+    private Date ctime;
     @Column(name = "department")
     private String department;
     @Column(name = "phase")
@@ -49,12 +50,12 @@ public class WorkplaceEntity {
         this.measurementResult = measurementResult;
     }
 
-    public String getCtime() {
+    public Date getCtime() {
         return ctime;
     }
 
-    public void setCtime(String date) {
-        this.ctime = date;
+    public void setCtime(Date ctime) {
+        this.ctime = ctime;
     }
 
     public String getDepartment() {
