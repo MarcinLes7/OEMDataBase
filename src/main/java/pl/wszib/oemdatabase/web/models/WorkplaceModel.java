@@ -11,7 +11,7 @@ public class WorkplaceModel {
     private BigDecimal measurementResult;
     @Size(min=1, max=50)
     @Pattern(regexp = "[0-9]{4}-[0-9]{2}-[0-9]{2}")
-    private String date;
+    private String ctime;
     @Size(min=1, max=50)
     private String department;
     @Size(min=1, max=50)
@@ -35,12 +35,12 @@ public class WorkplaceModel {
         this.measurementResult = measurementResult;
     }
 
-    public String getDate() {
-        return date;
+    public String getCtime() {
+        return ctime;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setCtime(String ctime) {
+        this.ctime = ctime;
     }
 
     public String getDepartment() {

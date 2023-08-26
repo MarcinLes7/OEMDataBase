@@ -1,5 +1,4 @@
 package pl.wszib.oemdatabase.data.entities;
-import jakarta.persistence.*;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -18,7 +17,7 @@ public class WorkplaceEntity {
     @Column(name = "measurement_result")
     private BigDecimal measurementResult;
     @Column(name = "date")
-    private String date;
+    private String ctime;
     @Column(name = "department")
     private String department;
     @Column(name = "phase")
@@ -50,12 +49,12 @@ public class WorkplaceEntity {
         this.measurementResult = measurementResult;
     }
 
-    public String getDate() {
-        return date;
+    public String getCtime() {
+        return ctime;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setCtime(String date) {
+        this.ctime = date;
     }
 
     public String getDepartment() {

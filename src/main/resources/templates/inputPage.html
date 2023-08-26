@@ -15,8 +15,8 @@
                 <span class="error-msg" th:if="${#fields.hasErrors('measurementResult')}">Wynik pomiaru w zakresie od 0 do 1000</span>
             </div>
             <div class="form-field">
-                <input th:field="*{date}" type="text" placeholder="Data" class="input">
-                <span class="error-msg" th:if="${#fields.hasErrors('date')}">Format daty: XXXX-XX-XX </span>
+                <input th:field="*{ctime}" type="text" placeholder="Data" class="input">
+                <span class="error-msg" th:if="${#fields.hasErrors('ctime')}">Format daty: XXXX-XX-XX </span>
             </div>
             <div class="form-field">
                 <input th:field="*{department}" type="text" placeholder="Wydział" class="input">

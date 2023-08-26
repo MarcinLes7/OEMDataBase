@@ -15,7 +15,7 @@ public class WorkplaceMapper {
         entity.setFirstName(model.getFirstName());
         entity.setLastName(model.getLastName());
         entity.setMeasurementResult(model.getMeasurementResult());
-        entity.setDate(model.getDate());
+        entity.setCtime(model.getCtime());
         return entity;
     }
 }
