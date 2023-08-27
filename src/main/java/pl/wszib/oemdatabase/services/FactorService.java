@@ -45,8 +45,8 @@ public class FactorService {
         final var entity = factorRepository.findById(factorId).orElseThrow(EntityNotFoundException::new);
 
         entity.setName(factorModel.getName());
-        entity.setDescription(factorModel.getDescription());
         entity.setOel(factorModel.getOel());
         entity.setUnit(factorModel.getUnit());
+        entity.setDescription(factorModel.getDescription());
     }
 }

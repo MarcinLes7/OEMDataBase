@@ -1,13 +1,6 @@
 package pl.wszib.oemdatabase.data.entities;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.math.BigDecimal;
 
@@ -18,11 +11,12 @@ public class MeasurementEntity {
     @GeneratedValue
     @Column(name = "id")
     private Long id;
-    @Column(name = "factor_name")
-    private String factorName;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "factor_id")
+    private FactorEntity factor;
     @Column(name = "oel")
     private BigDecimal oel;
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "workplace_id")
     private WorkplaceEntity workplace;
 
@@ -34,12 +28,12 @@ public class MeasurementEntity {
         this.id = id;
     }
 
-    public String getFactorName() {
-        return factorName;
+    public FactorEntity getFactor() {
+        return factor;
     }
 
-    public void setFactorName(String factorName) {
-        this.factorName = factorName;
+    public void setFactor(FactorEntity factor) {
+        this.factor = factor;
     }
 
     public BigDecimal getOel() {
@@ -57,5 +51,4 @@ public class MeasurementEntity {
     public void setWorkplace(WorkplaceEntity workplace) {
         this.workplace = workplace;
     }
-
 }
