@@ -32,6 +32,22 @@ public class MeasurementService {
 
         measurementEntity.setFactor(factorEntity);
         measurementEntity.setWorkplace(workplaceEntity);
+        measurementEntity.setFactorName(factorEntity.getName());
+        measurementEntity.setFactorDescription(factorEntity.getDescription());
+        measurementEntity.setOel(factorEntity.getOel());
+        measurementEntity.setUnit(factorEntity.getUnit());
+        measurementEntity.setMeasurementResult(workplaceEntity.getMeasurementResult());
+        /* teraz powinny być wzięte z sql:
+         divide_result
+         interpretation */
+        measurementEntity.setCtime(workplaceEntity.getCtime());
+        measurementEntity.setDepartment(workplaceEntity.getDepartment());
+        measurementEntity.setPhase(workplaceEntity.getPhase());
+        measurementEntity.setRoom(workplaceEntity.getRoom());
+        measurementEntity.setActivity(workplaceEntity.getActivity());
+        measurementEntity.setFirstName(workplaceEntity.getFirstName());
+        measurementEntity.setLastName(workplaceEntity.getLastName());
+        measurementEntity.setPpe(workplaceEntity.getPpe());
 
         final var savedMeasurement = measurementRepository.save(measurementEntity);
         return savedMeasurement.getId();
