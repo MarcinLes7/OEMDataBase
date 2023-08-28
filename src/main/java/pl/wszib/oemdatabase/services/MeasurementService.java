@@ -31,7 +31,6 @@ public class MeasurementService {
         MeasurementEntity measurementEntity = new MeasurementEntity();
 
         measurementEntity.setFactor(factorEntity);
-        measurementEntity.setMultiplicity(workplaceEntity.getMeasurementResult());
         measurementEntity.setWorkplace(workplaceEntity);
 
         final var savedMeasurement = measurementRepository.save(measurementEntity);

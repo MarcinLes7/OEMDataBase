@@ -14,8 +14,6 @@ public class MeasurementEntity {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "factor_id")
     private FactorEntity factor;
-    @Column(name = "multiplicity")
-    private BigDecimal multiplicity;
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "workplace_id")
     private WorkplaceEntity workplace;
@@ -34,14 +32,6 @@ public class MeasurementEntity {
 
     public void setFactor(FactorEntity factor) {
         this.factor = factor;
-    }
-
-    public BigDecimal getMultiplicity() {
-        return multiplicity;
-    }
-
-    public void setMultiplicity(BigDecimal multiplicity) {
-        this.multiplicity = multiplicity;
     }
 
     public WorkplaceEntity getWorkplace() {
