@@ -26,6 +26,21 @@ public class WorkplaceModel {
     @Size(min=1, max=500)
     private String ppe;
 
+    public WorkplaceModel() {
+    }
+
+    public WorkplaceModel(BigDecimal measurementResult, Date ctime, String department, String phase, String room, String activity, String firstName, String lastName, String ppe) {
+        this.measurementResult = measurementResult;
+        this.ctime = ctime;
+        this.department = department;
+        this.phase = phase;
+        this.room = room;
+        this.activity = activity;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.ppe = ppe;
+    }
+
     public BigDecimal getMeasurementResult() {
         return measurementResult;
     }

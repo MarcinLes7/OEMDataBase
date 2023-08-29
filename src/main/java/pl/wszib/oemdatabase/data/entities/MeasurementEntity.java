@@ -1,6 +1,7 @@
 package pl.wszib.oemdatabase.data.entities;
 
 import jakarta.persistence.*;
+import org.springframework.data.jpa.repository.Query;
 
 import java.math.BigDecimal;
 import java.sql.Date;
@@ -9,7 +10,7 @@ import java.sql.Date;
 @Table(name = "measurements", schema="oem")
 public class MeasurementEntity {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Long id;
     @ManyToOne(cascade = CascadeType.ALL)
