@@ -5,8 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("result-table")
 public class ResultController {
-    @GetMapping("result-table")
+    @GetMapping
     public String resultPage() {
         return "resultPage";
     }
