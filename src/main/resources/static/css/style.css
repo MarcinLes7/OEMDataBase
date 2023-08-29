@@ -234,3 +234,18 @@ section {
     gap: 50px;
     padding: 5px;
 }
+
+#result_content .table-result * {
+    border: 1px solid black;
+ }
+
+#result_content .tbl-h {
+    text-align: center;
+    font-size: 0.9em;
+    background-color: gray(255);
+}
+
+#result_content .tbl-d {
+    text-align: left;
+    font-size: 0.7em;
+}
