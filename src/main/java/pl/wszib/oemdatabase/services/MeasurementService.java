@@ -8,8 +8,12 @@ import pl.wszib.oemdatabase.data.entities.MeasurementEntity;
 import pl.wszib.oemdatabase.data.entities.WorkplaceEntity;
 import pl.wszib.oemdatabase.data.repositories.FactorRepository;
 import pl.wszib.oemdatabase.data.repositories.MeasurementRepository;
+import pl.wszib.oemdatabase.web.mappers.MeasurementMapper;
 import pl.wszib.oemdatabase.web.mappers.WorkplaceMapper;
+import pl.wszib.oemdatabase.web.models.MeasurementModel;
 import pl.wszib.oemdatabase.web.models.WorkplaceModel;
+
+import java.util.List;
 
 @Service
 public class MeasurementService {
@@ -52,4 +56,14 @@ public class MeasurementService {
         final var savedMeasurement = measurementRepository.save(measurementEntity);
         return savedMeasurement.getId();
     }
+
+    public List<MeasurementModel> findAll() {
+        final var entities = measurementRepository.findAll();
+
+        return entities.stream()
+                .map(MeasurementMapper::toModel)
+                .toList();
+    }
+
+
 }

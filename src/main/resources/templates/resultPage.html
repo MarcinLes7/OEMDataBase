@@ -5,7 +5,7 @@
     <div class="container">
         <h1>Tabela wyników pomiarów na stanowiskach pracy</h1>
         <form action="">
-            <table class="table-result">
+            <table th:each="result : ${results}" class="table-result">
                 <tr class="tbl-h">
                     <th>factor_name</th>
                     <th>factor_description</th>
@@ -24,21 +24,21 @@
                     <th>ppe</th>
                 </tr>
                 <tr class="tbl-d">
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
+                    <td th:text="${result.factorName}"></td>
+                    <td th:text="${result.factorDescription}"></td>
+                    <td th:text="${result.oel}"></td>
+                    <td th:text="${result.unit}"></td>
+                    <td th:text="${result.measurementResult}"></td>
+                    <td th:text="${result.divideResult}"></td>
+                    <td th:text="${result.interpretation}"></td>
+                    <td th:text="${result.ctime}"></td>
+                    <td th:text="${result.department}"></td>
+                    <td th:text="${result.phase}"></td>
+                    <td th:text="${result.room}"></td>
+                    <td th:text="${result.activity}"></td>
+                    <td th:text="${result.firstName}"></td>
+                    <td th:text="${result.lastName}"></td>
+                    <td th:text="${result.ppe}"></td>
                 </tr>
             </table>
         </form>
