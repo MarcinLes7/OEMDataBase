@@ -94,6 +94,13 @@ section {
 
 /*Strona factorPage*/
 
+#factor-content {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 5px;
+}
+
 #factor-content .form-row {
     display: flex;
     flex-direction: row;
@@ -210,11 +217,20 @@ section {
     object-fit: cover
 }
 
-/*Stroan RegisterPage*/
+/*Strona RegisterPage*/
 #register-content h1 {
     text-align: center
 }
 
 #register-content table {
     width: 100%
+}
+
+/*Strona resultPage*/
+
+#result_content {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 5px;
 }
