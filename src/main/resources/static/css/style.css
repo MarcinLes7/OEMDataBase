@@ -263,5 +263,17 @@ section {
 }
 
 #result_content h1 {
-    text-align: center
+    text-align: center;
+}
+
+
+
+/*Strona statPage*/
+
+#stat_content h1 {
+    text-align: center;
+}
+
+.ul {
+    font-size: 0.8em;
 }

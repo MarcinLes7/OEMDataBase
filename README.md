@@ -137,15 +137,21 @@ Datę pomiaru wprowadza się poprzez kliknięcie, na ikonę kalendarza, wybranie
 ## Strona "Wyświetl wyniki pomiarów"
 
 Strona "Wyświetl wyniki pomiarów" ma zadanie wyświetlać wprowadzone do bazy wyniki pomiarów wraz z parametrami
-czynników, dla których pomiary były wykonywane. Strona prezentuje tabelę zawierającą wszystkie wprowadzone wyniki.
+czynników, dla których pomiary były wykonywane. Strona prezentuje tabelę zawierającą wszystkie wprowadzone wyniki. W
+tabeli znajdują się poza wprowadzonymi danymi wyniki obliczeń krotności zmierzonych stężeń i natężeń czynników
+szkodliwych na stanowiskach pracy wraz z interpretacją wyniku. Krotność stężenia jest to wartość obliczona z podzielenia
+wyniku pomiaru przez wartość najwyższego dopuszczalnego stężenia / natężenia, określoną dla danego czynnika. Krotności
+mniejsze od 1 wskazują, że wynik pomiaru mieści się w normie, a stanowisko pracy jest bezpieczne. Wynik równy jeden lub
+wyższy wskazuje, że na stanowisku pracy występują przekroczenai czynników szkodliwych i pracodawca zobowiązany jest
+wprowadzić zabezpieczenia techniczne mające na celu obniżenie stężenia czynnika szkodliwego poniżej normy.
 
 ![Wyniki pomiarow!](./src/main/resources/assets/images/result.jpg "Wyświetlanie wyników pomiarów")
 
 ## Strona "Podstawowe statystyki"
 
 Strona "Podstawowe statystyki" ma za zadanie wyświetlić graficznie wybrane podstawowe statystyki dotyczące wykonywanych
-pomiarów. Między innymi na wykresie słupkowym wyświetlane sa ilości wykonanych pomiarów na stanowiskach pracy z
-podziałem na czynnik szkodliwy.
+pomiarów. Między innymi na wykresie słupkowym wyświetlane są ilości wykonanych pomiarów na stanowiskach pracy z
+podziałem na poszczególne czynniki szkodliwe.
 
 ![Podstawowe statystyki!](./src/main/resources/assets/images/stat.jpg "Wyświetlanie podstawowych statystyk")
 

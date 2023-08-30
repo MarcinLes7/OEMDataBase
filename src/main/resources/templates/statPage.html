@@ -4,43 +4,45 @@
 <section id="stat_content">
     <div class="container">
         <h1>Podstawowe statystyki pomiarów na stanowiskach pracy</h1>
-        <form action="">
-
-
-            <div>
-                <canvas id="myChart"></canvas>
-            </div>
-
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-            <script th:inline="javascript">
-                const ctx = document.getElementById('myChart');
-
-                new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        labels: [[${labels}]],
-                        datasets: [{
-                            data: [[${data}]],
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        plugins: {
-                            legend: {display: false}
+        <div>
+            <ul class="ul">
+                <li>
+                    <h3>Wykres ilości wykonanych pomiarów w rozbiciu na czynniki</h3>
+                </li>
+            </ul>
+            <form>
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script th:inline="javascript">
+                    const ctx = document.getElementById('myChart');
+                    new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: [[${labels}]],
+                            datasets: [{
+                                data: [[${data}]],
+                                borderWidth: 1
+                            }]
                         },
-                        scales: {
-                            y: {
-                                beginAtZero: true
+                        options: {
+                            plugins: {
+                                legend: {display: false}
+                            },
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
                             }
                         }
-                    }
-                });
-            </script>
+                    });
+                </script>
+            </form>
+        </div>
+        <div>
 
-
-
-        </form>
+        </div>
     </div>
 </section>
 </html>
