@@ -29,8 +29,8 @@
                     <td th:text="${result.oel}"></td>
                     <td th:text="${result.unit}"></td>
                     <td th:text="${result.measurementResult}"></td>
-                    <td th:text="${result.divideResult}"></td>
-                    <td th:text="${result.interpretation}"></td>
+                    <td th:text="${result.measurementResult / result.oel}"></td>
+                    <td th:text="${result.measurementResult / result.oel < 1 ? 'zgodne' : 'niezgodne'}"></td>
                     <td th:text="${result.ctime}"></td>
                     <td th:text="${result.department}"></td>
                     <td th:text="${result.phase}"></td>
