@@ -6,8 +6,9 @@ import org.springframework.stereotype.Repository;
 import pl.wszib.oemdatabase.data.entities.MeasurementEntity;
 
 import java.util.Collection;
+
 @Repository
 public interface MeasurementRepository extends JpaRepository<MeasurementEntity, Long> {
-/*    @Query("select measurement_result / oel as divide_result from oem.measurements")
+ /*   @Query("select oem.measurements.measurement_result / oem.measurements.oel as divide_result, CASE  WHEN measurement_result / oel < 1 THEN 'zgodny' WHEN measurement_result / oel >= 1 THEN 'niezgodny' END as interpretation from oem.measurements")
     Collection<measurements> divideResult;*/
 }
