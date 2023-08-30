@@ -19,8 +19,6 @@ public class MeasurementEntity {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "workplace_id")
     private WorkplaceEntity workplace;
-
-    /*poniżej dodane nowe kolumny do tabeli measurement*/
     @Column(name = "factor_name")
     private String factorName;
     @Column(name = "factor_description")
@@ -76,8 +74,6 @@ public class MeasurementEntity {
         this.workplace = workplace;
     }
 
-
-    /*nowe getery i setery*/
     public String getFactorName() {
         return factorName;
     }
