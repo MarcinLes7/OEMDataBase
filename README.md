@@ -17,6 +17,7 @@ Aplikacja składa się z następujących stron:
 - strony do wprowadzania i edytowania czynników szkodliwych występujących na stanowiskach pracy,
 - strony do wprowadzania wyników pomiarów,
 - strony do wyświetlania wyników pomiarów,
+- strony z podstawowymi statystykami,
 
 Strona startowa zawiera menu z odnośnikami do kolejnych stron. Na stronie startowej znajduje się odniesienie do wymagań
 prawnych dotyczących zasad prowadzenia pomiarów czynników szkodliwych na stanowiskach pracy.
@@ -33,6 +34,9 @@ stanowiska pracy, rodzaju czynika szkodliwego, daty pomiaru, wyniku pomiaru, a t
 prace na stanowisku.
 
 Strona do wyświetlania wyników pomiarów posiada, możliwość wyświetlania wyników w postaci tabelarycznej.
+
+Strona z podstawowymi statystykami służy do wyświetlania w postaci graficznej podstawowych zestawień statystycznych
+dotyczących wykonywanych pomiarów na stanowiskach pracy.
 
 ## Używanie aplikacji
 
@@ -137,6 +141,13 @@ czynników, dla których pomiary były wykonywane. Strona prezentuje tabelę zaw
 
 ![Wyniki pomiarow!](./src/main/resources/assets/images/result.jpg "Wyświetlanie wyników pomiarów")
 
+## Strona "Podstawowe statystyki"
+
+Strona "Podstawowe statystyki" ma za zadanie wyświetlić graficznie wybrane podstawowe statystyki dotyczące wykonywanych
+pomiarów. Między innymi na wykresie słupkowym wyświetlane sa ilości wykonanych pomiarów na stanowiskach pracy z
+podziałem na czynnik szkodliwy.
+
+![Podstawowe statystyki!](./src/main/resources/assets/images/stat.jpg "Wyświetlanie podstawowych statystyk")
 
 ## Budowa aplikacji "OEM Database"
 
