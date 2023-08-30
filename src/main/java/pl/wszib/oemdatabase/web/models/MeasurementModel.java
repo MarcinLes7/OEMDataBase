@@ -27,6 +27,9 @@ public class MeasurementModel {
     private String lastName;
     private String ppe;
 
+    public MeasurementModel() {
+    }
+
     public MeasurementModel(String factorName, String factorDescription, BigDecimal oel, String unit, BigDecimal measurementResult, BigDecimal divideResult, String interpretation, Date ctime, String department, String phase, String room, String activity, String firstName, String lastName, String ppe) {
         this.factorName = factorName;
         this.factorDescription = factorDescription;

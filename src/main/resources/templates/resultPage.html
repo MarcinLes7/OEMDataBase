@@ -3,27 +3,27 @@
       th:replace="~{fragments/layout :: template (~{:: #result_content})}">
 <section id="result_content">
     <div class="container">
-        <h1>Tabela wyników pomiarów na stanowiskach pracy</h1>
+        <h1>Wyniki pomiarów na stanowiskach pracy</h1>
         <form action="">
-            <table th:each="result : ${results}" class="table-result">
+            <table class="table-result">
                 <tr class="tbl-h">
-                    <th>factor_name</th>
-                    <th>factor_description</th>
-                    <th>oel</th>
-                    <th>unit</th>
-                    <th>measurement_result</th>
-                    <th>divide_result</th>
-                    <th>interpretation</th>
-                    <th>ctime</th>
-                    <th>department</th>
-                    <th>phase</th>
-                    <th>room</th>
-                    <th>activity</th>
-                    <th>first_name</th>
-                    <th>last_name</th>
-                    <th>ppe</th>
+                    <th>Czynnik</th>
+                    <th>Opis</th>
+                    <th>NDS</th>
+                    <th>Jednostka</th>
+                    <th>Wynik pomiaru</th>
+                    <th>Krotność</th>
+                    <th>Interpretacja</th>
+                    <th>Data</th>
+                    <th>Wydział</th>
+                    <th>Faza</th>
+                    <th>Sala</th>
+                    <th>Czynność</th>
+                    <th>Imię</th>
+                    <th>Nazwisko</th>
+                    <th>ŚOI</th>
                 </tr>
-                <tr class="tbl-d">
+                <tr th:each="result : ${results}" class="tbl-d">
                     <td th:text="${result.factorName}"></td>
                     <td th:text="${result.factorDescription}"></td>
                     <td th:text="${result.oel}"></td>

@@ -239,13 +239,17 @@ section {
     border: 1px solid black;
  }
 
-#result_content .tbl-h {
+#result_content .table-result .tbl-h {
     text-align: center;
     font-size: 0.9em;
     background-color: gray(255);
 }
 
-#result_content .tbl-d {
+#result_content .table-result .tbl-d {
     text-align: left;
     font-size: 0.7em;
+}
+
+#result_content h1 {
+    text-align: center
 }
