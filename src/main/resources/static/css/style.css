@@ -237,12 +237,13 @@ section {
 
 #result_content .table-result * {
     border: 1px solid black;
+    border-collapse: collapse;
  }
 
 #result_content .table-result .tbl-h {
     text-align: center;
     font-size: 0.9em;
-    background-color: gray(255);
+    background-color: cadetblue;
 }
 
 #result_content .table-result .tbl-d {
