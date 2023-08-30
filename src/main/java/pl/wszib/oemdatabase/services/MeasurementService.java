@@ -41,9 +41,8 @@ public class MeasurementService {
         measurementEntity.setOel(factorEntity.getOel());
         measurementEntity.setUnit(factorEntity.getUnit());
         measurementEntity.setMeasurementResult(workplaceEntity.getMeasurementResult());
-        /* teraz powinny być wzięte z sql:
-         divide_result
-         interpretation */
+        measurementEntity.setDivideResult(measurementEntity.getDivideResult());
+        measurementEntity.setInterpretation(measurementEntity.getInterpretation());
         measurementEntity.setCtime(workplaceEntity.getCtime());
         measurementEntity.setDepartment(workplaceEntity.getDepartment());
         measurementEntity.setPhase(workplaceEntity.getPhase());

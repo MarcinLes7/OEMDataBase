@@ -18,17 +18,17 @@ public class StatController {
     @Autowired
     MeasurementService measurementService;
 
-    @GetMapping ("/stat-table")
+    @GetMapping("/stat-table")
     String statPage(Model model) {
         List<MeasurementModel> measurementsPerformed = measurementService.findAll();
-        Map<String, Long> dataMap = measurementsPerformed.stream().collect(Collectors.groupingBy(MeasurementModel::getFactorName, Collectors.counting()));
+        Map<String, Long> dataMap = measurementsPerformed.
+                stream().
+                collect(Collectors.groupingBy(MeasurementModel::getFactorName, Collectors.counting()));
 
         model.addAttribute("labels", dataMap.keySet());
         model.addAttribute("data", dataMap.values());
 
-
         return "statPage";
     }
-
 
 }

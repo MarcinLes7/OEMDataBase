@@ -142,7 +142,7 @@ tabeli znajdują się poza wprowadzonymi danymi wyniki obliczeń krotności zmie
 szkodliwych na stanowiskach pracy wraz z interpretacją wyniku. Krotność stężenia jest to wartość obliczona z podzielenia
 wyniku pomiaru przez wartość najwyższego dopuszczalnego stężenia / natężenia, określoną dla danego czynnika. Krotności
 mniejsze od 1 wskazują, że wynik pomiaru mieści się w normie, a stanowisko pracy jest bezpieczne. Wynik równy jeden lub
-wyższy wskazuje, że na stanowisku pracy występują przekroczenai czynników szkodliwych i pracodawca zobowiązany jest
+wyższy wskazuje, że na stanowisku pracy występują przekroczenia czynników szkodliwych i pracodawca zobowiązany jest
 wprowadzić zabezpieczenia techniczne mające na celu obniżenie stężenia czynnika szkodliwego poniżej normy.
 
 ![Wyniki pomiarow!](./src/main/resources/assets/images/result.jpg "Wyświetlanie wyników pomiarów")

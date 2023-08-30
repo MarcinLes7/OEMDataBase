@@ -9,6 +9,4 @@ import java.util.Collection;
 
 @Repository
 public interface MeasurementRepository extends JpaRepository<MeasurementEntity, Long> {
-/*    @Query("select oem.measurements.measurement_result / oem.measurements.oel as divide_result, CASE  WHEN measurement_result / oel < 1 THEN 'zgodny' WHEN measurement_result / oel >= 1 THEN 'niezgodny' END as interpretation from oem.measurements")
-    Collection<measurements> divideResult;*/
 }
