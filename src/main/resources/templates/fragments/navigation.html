@@ -7,11 +7,11 @@
 <body>
 <nav id="page-nav" th:fragment="nav">
     <div class="container" id="nav-row">
-        <a th:href="@{/}" id="logo">Baza OEM</a>
-        <a th:href="@{/factorDescription}" class="nav-item">Opis czynników szkodliwych</a>
-        <a th:href="@{/oem-panel}" class="nav-item">Baza czynników</a>
-        <a th:href="@{/result-table}" class="nav-item">Wyświetl wyniki pomiarów</a>
-        <a th:href="@{/stat-table}" class="nav-item">Podstawowe statystyki</a>
+        <a th:href="@{/}" th:classappend="${title == 'Baza OEM'} ? 'active' : ''" id="logo">Baza OEM</a>
+        <a th:href="@{/factorDescription}" th:classappend="${title == 'Opis czynników szkodliwych'} ? 'active' : ''" class="nav-item">Opis czynników szkodliwych</a>
+        <a th:href="@{/oem-panel}" th:classappend="${title == 'Baza czynników'} ? 'active' : ''" class="nav-item">Baza czynników</a>
+        <a th:href="@{/result-table}" th:classappend="${title == 'Wyświetl wyniki pomiarów'} ? 'active' : ''" class="nav-item">Wyświetl wyniki pomiarów</a>
+        <a th:href="@{/stat-table}" th:classappend="${title == 'Podstawowe statystyki'} ? 'active' : ''" class="nav-item">Podstawowe statystyki</a>
     </div>
 </nav>
 </body>
