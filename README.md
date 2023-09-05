@@ -93,7 +93,7 @@ dopuszczalnego stężenia lub natężenia danego czynnika wynikająca z rozporz�
 - **edytuj** - przycisk służy do przekierowania na stronę, na której istnieje możliwość edycji danych dla danego
   czynnika
   szkodliwego,
-- **usuń** - przycisk służy do usunięcia danego czynnika szkodliwego z bazy,
+- **usuń** - przycisk służy do usunięcia danego czynnika szkodliwego z bazy, w przypadku w którym nie został on jeszcze wykorzystany do wprowadzenia wyników pomiarów na stanowisku pracy,
 
 Poniżej tabeli z czynnikami szkodliwymi znajduje się przycisk **"dodaj"**. Przycisk służy do przekierowania na stronę,
 na której istnieje możliwość dodania nowego czynnika szkodliwego do bazy wraz z wartościami NDS oraz opisem czynnika.
